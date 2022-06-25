@@ -1,0 +1,44 @@
+body {
+  background-color: #141212;
+}
+h1{
+    text-align: center;
+    color: aquamarine;
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+input {
+  width: 40px;
+  height: 40px;
+  color: rgb(248, 228, 43);
+  border-radius: 50%;
+  background: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 2px solid orangered;
+  filter: drop-shadow(1px -2px 11px #c9060642);
+  transition:  all .7s;
+}
+.box:hover input {
+  width: 350px;
+  border-radius: 0;
+  outline: none;
+}
+i {
+  position: absolute;
+  color: red;
+  top: 40%;
+  right: 40%;
+  transition: 0.3s;
+}
+.box:hover i {
+  opacity: 0;
+  z-index: -2;
+}
